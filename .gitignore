@@ -3,6 +3,9 @@
 *.weights
 *.h5
 logs/
+UECFOOD256/
+YoloWeight/
+Database/
 *_test.py
 
 # Byte-compiled / optimized / DLL files

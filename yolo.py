@@ -18,11 +18,14 @@ from yolo3.utils import letterbox_image
 import os
 from keras.utils import multi_gpu_model
 
+#python yolo_video.py --model logs/000/trained_weights_stage_1.h5 --classes model_data/food_class.txt --image
+
+
 class YOLO(object):
     _defaults = {
-        "model_path": 'model_data/yolo.h5',
+        "model_path": 'model_data/yolo_food.h5',
         "anchors_path": 'model_data/yolo_anchors.txt',
-        "classes_path": 'model_data/coco_classes.txt',
+        "classes_path": 'model_data/food_class.txt',
         "score" : 0.3,
         "iou" : 0.45,
         "model_image_size" : (416, 416),
